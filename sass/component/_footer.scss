@@ -1,0 +1,26 @@
+.footer{
+    padding: 3rem 0;
+    &__heading{
+        text-align: center;
+        font-size: 2.8rem;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.9rem;
+        border-bottom: 1px solid rgba(#fff,.4);
+        width: 70%;
+        margin: 0 auto;
+     
+    }
+    &__orderedlist{
+        list-style: none;
+    }
+    &__item{
+        color:#fff;
+    }
+    &__list{
+            margin-bottom: 1.2rem;
+          
+    }
+}

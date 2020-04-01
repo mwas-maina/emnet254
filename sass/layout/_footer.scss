@@ -1,0 +1,16 @@
+.footer{
+    background-color: rgba(0,0,0,.8);
+    font-size: 1.6rem;
+    color: #fff;
+ 
+    &__heading{
+        color: #fff;
+        filter: brightness(95%);
+        border-bottom: 1px solid rgba(#fff,.4);
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom:2rem;
+      
+    }
+}
