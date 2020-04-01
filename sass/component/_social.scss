@@ -5,6 +5,7 @@
     background-color: #101d2c;
     position: fixed;
     transform: translateY(-50%);
+    z-index: 10000;
       >* {
         &:not(:last-child){
             margin-bottom: 1rem;

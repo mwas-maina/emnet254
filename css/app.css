@@ -94,7 +94,8 @@ a {
   left: .1%;
   background-color: #101d2c;
   position: fixed;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  z-index: 10000; }
   .social > *:not(:last-child) {
     margin-bottom: 1rem; }
   .social__facebook--fbicon {
@@ -148,7 +149,8 @@ a {
   display: none;
   position: relative; }
   .checkbox:checked ~ .navigation__background {
-    transform: scaleX(126);
+    width: 100vw;
+    transform: scaleX(2);
     display: block;
     opacity: 1;
     overflow: hidden;
@@ -239,7 +241,7 @@ a {
     transition: all .5s;
     box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.3); }
     .services__card:hover {
-      transform: scale(1.05);
+      transform: scale(1.01);
       box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.7); }
   .services__text {
     line-height: 1.7;
@@ -285,7 +287,7 @@ a {
     transition: all .5s;
     box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.3); }
     .services__card:hover {
-      transform: scale(1.05);
+      transform: scale(1.01);
       box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.7); }
   .services__text {
     line-height: 1.7;
@@ -329,9 +331,40 @@ a {
   padding: 20rem 0; }
 
 .testimonials {
-  background-color: purple;
-  padding: 20rem 0; }
+  background-image: linear-gradient(rgba(16, 29, 44, 0.9), rgba(0, 0, 0, 0.8), rgba(16, 29, 44, 0.9)), url("../../resources/images/testimonials.jpg");
+  padding: 5rem 5rem;
+  background-position: top;
+  background-size: cover;
+  color: #fff;
+  font-weight: 200;
+  filter: brightness(90%); }
+  .testimonials__part {
+    display: flex; }
 
 .projects {
   background-color: orangered;
   padding: 20rem 0; }
+
+.image {
+  height: 7rem;
+  width: 7rem;
+  object-fit: cover;
+  shape-outside: circle(50% at 50% 50%); }
+  .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden; }
+
+.profile__paragraph {
+  font-size: 1.9rem;
+  line-height: 1.7; }
+
+.profile__image {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem; }
+
+.testimonials__person1, .testimonials__person2, .testimonials__person3 {
+  display: flex;
+  padding: 4rem 5rem; }

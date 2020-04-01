@@ -1,31 +1,26 @@
 /* .checkbox:checked  body{
     background-color: rgba(0,0,0,.7);
 } */
-
-
 .checkbox{
     display: none;
     position: relative;
     &:checked  ~ .navigation__background{
-        transform: scaleX(126);
+        width:100vw;
+        transform: scaleX(2);
         //transform-origin:left;
         display: block;
         opacity: 1;
         overflow: hidden;
         animation-name: moveFromRightToLeft;
         //animation-duration: .4s;
-      
     } 
     &:checked  ~ .navigation__button{
         background-color: #B28451;
-    
     }
     &:checked  ~ .animated-nav{
         display: block;
         opacity: 1;
     }
-  
-
     &__icon{
         z-index: 100;
         &,
@@ -35,7 +30,6 @@
             height: 2px;
             background-color:rgba(0,0,0,.5);
             display: block;
-           
         }
         &::before,
         &::after {
@@ -81,12 +75,8 @@
         transition: all .7s;
         opacity: 0;
         z-index: 3;
-       
-       
-        //z-index: -1;
-        
+        //z-index: -1 
     }
-
 }
 .animated-nav{
     display: none;
@@ -101,11 +91,8 @@
         display: flex;
         justify-content:space-around;
         list-style-type: none;
-       
     }
     &__navigationitem{
-   
-
     }
     &__link{
         font-size: 1.5rem;
