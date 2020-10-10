@@ -1,0 +1,36 @@
+{
+  "name": "emnet254",
+  "version": "1.0.0",
+  "description": "company website",
+  "main": "index.js",
+  "scripts": {
+    "devserver": "live-server",
+    "start": "npm-run-all  --parallel devserver watch:sass",
+    "watch:sass": "node-sass sass/main.scss css/app.css -w",
+    "compile:sass": "node-sass sass/main.scss  resources/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer  -b  'last 5 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css  css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass  prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwas-maina/emnet254.git"
+  },
+  "author": "mwangi maina",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "concat": "^1.0.3",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/mwas-maina/emnet254/issues"
+  },
+  "homepage": "https://github.com/mwas-maina/emnet254#readme",
+  "dependencies": {
+    "fontawesome": "^5.6.3",
+    "sweetalert": "^2.1.2"
+  }
+}

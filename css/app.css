@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  box-sizing: inherit;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+  html body {
+    box-sizing: border-box;
+    font-family: 'Cormorant', serif;
+    background-color: #ccc; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  height: 80vh;
+  background-color: orangered; }
+
+.navigation {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff; }
+  .navigation__logo {
+    display: flex;
+    align-items: center;
+    margin-left: -26rem; }
+    .navigation__logo--link {
+      color: #000; }
+  .navigation__orderlist {
+    list-style-type: none;
+    display: flex;
+    padding: 1.9rem 2rem; }
+  .navigation__list {
+    margin-right: 2rem; }
+  .navigation__link {
+    color: #000; }

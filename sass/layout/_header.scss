@@ -1,0 +1,51 @@
+.header{
+    height: 80vh;
+    background-color: orangered;
+}
+
+
+.navigation{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+  
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        margin-left: -26rem;
+
+        &--link{
+            color: #000;
+           
+
+        }
+
+    }
+    &__items{
+       
+
+    }
+    &__orderlist{
+        list-style-type: none;
+        display: flex; 
+        padding: 1.9rem 2rem;
+        
+
+    }
+    &__list{
+        margin-right: 2rem;
+      
+        
+        
+
+    }
+    &__link{
+        color: #000;
+     
+        
+
+    }
+
+}
