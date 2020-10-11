@@ -1,3 +1,8 @@
+/* .checkbox:checked  body{
+    background-color: rgba(0,0,0,.7);
+} */
+
+
 .checkbox{
     display: none;
     position: relative;
@@ -7,6 +12,9 @@
         display: block;
         opacity: 1;
         overflow: hidden;
+        animation-name: moveFromRightToLeft;
+        //animation-duration: .4s;
+      
     } 
     &:checked  ~ .navigation__button{
         background-color: #B28451;
@@ -16,6 +24,7 @@
         display: block;
         opacity: 1;
     }
+  
 
     &__icon{
         z-index: 100;
@@ -69,7 +78,7 @@
         position: fixed;
         top:  7rem;
         left: 3%;
-        transition: all .4s;
+        transition: all .7s;
         opacity: 0;
         z-index: 3;
        

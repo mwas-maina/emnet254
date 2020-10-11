@@ -1,7 +1,9 @@
 .social{
     position: absolute;
     top: 50%;
-    left: 1%;
+    left: .1%;
+    background-color: #101d2c;
+    position: fixed;
     transform: translateY(-50%);
       >* {
         &:not(:last-child){

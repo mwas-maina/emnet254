@@ -5,3 +5,23 @@
     filter: brightness(97%);
     font-weight: 160;
 }
+.more{
+    font-size: 1.6rem;
+    filter: brightness(85%);
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    a{
+        color: black;
+        &:active,
+        :visited{
+            color: #ccc;
+        }
+    }
+}
+.heading{
+    font-size: 2.9rem;
+    font-weight: 170;
+    text-align: center;
+    margin-top: 3.5rem;
+}
