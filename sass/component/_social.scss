@@ -1,0 +1,40 @@
+.social{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+      >* {
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+    &__facebook{
+        &--fbicon{
+            fill: rgb(148, 148, 231);
+            //color: #fff;
+
+        }
+        
+
+    }
+    &__twitter{
+        &--twittericon{
+            fill: rgb(77, 121, 251);
+
+        }
+
+    }
+    &__whatsapp{
+        &--whatsappicon{
+            fill: rgb(10, 180, 10);
+
+        }
+       
+    }
+
+}
+.icon{
+    height: 3.5rem;
+    width: 3.5rem;
+
+}

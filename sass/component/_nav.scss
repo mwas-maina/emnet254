@@ -1,0 +1,107 @@
+.checkbox{
+    display: none;
+    position: relative;
+    &:checked  ~ .navigation__background{
+        transform: scaleX(126);
+        //transform-origin:left;
+        display: block;
+        opacity: 1;
+        overflow: hidden;
+    } 
+    &:checked  ~ .navigation__button{
+        background-color: #B28451;
+    
+    }
+    &:checked  ~ .animated-nav{
+        display: block;
+        opacity: 1;
+    }
+
+    &__icon{
+        z-index: 100;
+        &,
+        &::before,
+        &::after{
+            width: 3rem;
+            height: 2px;
+            background-color:rgba(0,0,0,.5);
+            display: block;
+           
+        }
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+        
+        }
+        &::before{
+            top: 1.3rem;
+          
+        }
+        &::after{
+            top: 3.1rem;
+         
+        }
+    }
+}
+.navigation{
+    &__button{
+        position: absolute;
+        top: 7rem;
+        left: 2%;
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius:200px;
+        position: fixed;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index:10;
+        overflow: hidden;
+        transition: all .8s ease-in-out;
+        box-shadow: 0 1rem 1.7rem  rgba(0,0,0,.7);
+    }
+    &__background{
+        background-color: #fff;
+        height: 4.5rem;
+        width: 2.4rem;
+        position: fixed;
+        top:  7rem;
+        left: 3%;
+        transition: all .4s;
+        opacity: 0;
+        z-index: 3;
+       
+       
+        //z-index: -1;
+        
+    }
+
+}
+.animated-nav{
+    display: none;
+    opacity: 0;
+    height: 0;
+    width: 100vw;
+    position: fixed;
+    top: 8.2rem;
+    z-index: 5;
+    &__navigationlist{
+        margin-left: 4rem;
+        display: flex;
+        justify-content:space-around;
+        list-style-type: none;
+       
+    }
+    &__navigationitem{
+   
+
+    }
+    &__link{
+        font-size: 1.5rem;
+        color: rgba(0,0,0,.8);
+    }
+}
+
+

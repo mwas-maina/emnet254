@@ -1,0 +1,12 @@
+.btn{
+    border: none;
+    border-bottom: 1px solid transparent;
+    color: #fff;
+    &:active{
+        outline: none;
+        border-bottom: 1px solid #ffb900;
+    }
+    &:focus{
+        outline: none;
+    }
+}

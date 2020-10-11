@@ -1,0 +1,35 @@
+.subscribe{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.newsletter{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+   
+    &__input{
+        padding: 1.6rem 2.5rem;
+        border: none;
+        margin-right: .4rem;
+        width: 90%;
+        transition: all .7s ease;
+        &:focus{
+            outline: none;
+            width: 100%;
+        }
+    
+    }
+    &__button{
+        padding: 1.6rem 2.5rem;
+        background-color:#c69963;
+        transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover{
+            background-color: #B28451;
+        }
+     
+    }
+   
+}
