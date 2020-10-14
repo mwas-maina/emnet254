@@ -9,10 +9,11 @@ html {
   font-size: 62.5%;
   body {
     box-sizing: border-box;
-    font-family: 'Cormorant', serif;
+    font-family: /* 'Cormorant', */ sans-serif;
     background-image: linear-gradient(to top, #ccc,#ddee);
   }
 }
 a{
     text-decoration: none;
 }
+

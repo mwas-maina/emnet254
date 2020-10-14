@@ -1,5 +1,5 @@
 .footer{
-    padding: 3rem 0;
+  
     &__heading{
         text-align: center;
         font-size: 2.8rem;
@@ -22,5 +22,10 @@
     &__list{
             margin-bottom: 1.2rem;
           
+    }
+    &__copyright{
+        margin-top: 4.5rem;
+        display: flex;
+        justify-content: center;
     }
 }

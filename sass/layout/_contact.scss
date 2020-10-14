@@ -1,0 +1,43 @@
+.talk{
+    padding: 6rem 3rem;
+    background-image: linear-gradient(rgba(#05091f,.4),rgba(#05091f,.5));
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+
+    
+    
+   
+  
+}
+.contact{
+    padding: 3rem 4rem;
+    display: flex;
+   
+
+ 
+    &__form{
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 40%;
+        margin-left: 2rem;
+        
+       
+
+    }
+    &__input{
+        padding: 1.8rem 2.3rem;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 10px;
+        &:focus{
+            outline: none;
+
+        }
+
+      
+    }
+  
+}

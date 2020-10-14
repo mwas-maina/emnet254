@@ -1,4 +1,52 @@
 .projects{
-    background-color: orangered;
-    padding: 20rem 0;
+    padding: 8rem 4rem;
+    background-color: #fff;
+    color: #101d2c;
+}
+.project-lists{
+    display: flex;
+    &__react-project{
+       
+    }
+    &__css-project,
+    &__firebase-project,
+    &__react-project{
+        margin-right: 1.5rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;  
+    }
+    &__css-project{
+
+
+    }
+    &__firebase-project{
+
+    }
+    &__image{
+       width: 100%;
+
+
+    }
+
+    &__photo{
+        width: 100%;
+      
+        &--1{
+
+        }
+        &--2{
+            
+        }
+        &--3{
+            
+        }
+    }
+    &__text{
+   
+      font-size: 1.6rem;
+     
+
+    }
 }
